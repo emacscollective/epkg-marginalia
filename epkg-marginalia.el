@@ -1,11 +1,12 @@
 ;;; epkg-marginalia.el --- Show Epkg information in completion annotations  -*- lexical-binding: t -*-
 
-;; Copyright (C) 2021  Jonas Bernoulli
+;; Copyright (C) 2021-2022  Jonas Bernoulli
 
 ;; Author: Jonas Bernoulli <jonas@bernoul.li>
 ;; Homepage: https://github.com/emacscollective/epkg-marginalia
 ;; Keywords: tools
-;; Package-Requires: ((emacs "26") (epkg "3.3.1"))
+
+;; Package-Requires: ((emacs "26") (epkg "3.3.1") (marginalia "0.12"))
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
 ;; This file is free software; you can redistribute it and/or modify
@@ -85,7 +86,7 @@ Uses information provided by `borg', `epkg' and `package'."
         :width 11)
        ((or (and epkg (oref epkg summary))
             (and desc (package-desc-summary desc)))
-        :truncate marginalia-truncate-width
+        :truncate marginalia-field-width
         :face 'marginalia-documentation)))))
 
 ;;; _
