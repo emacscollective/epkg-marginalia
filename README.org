@@ -1,0 +1,13 @@
+** Show Epkg information in completion annotations
+
+Out of the box [[https://github.com/minad/marginalia][Marginalia]] enriches package completion with
+information from the built-in package manager.  This packages
+teaches it to additionally use the [[https://github.com/emacsmirror/epkgs][Epkgs]] database, and if the
+[[https://github.com/emacscollective/borg][Borg]] package manager is available, then it uses information
+provided by that as well.
+
+#+begin_src emacs-lisp
+  (with-eval-after-load 'marginalia
+    (cl-pushnew 'epkg-marginalia-annotate-package
+		(alist-get 'package marginalia-annotator-registry)))
+#+end_src
