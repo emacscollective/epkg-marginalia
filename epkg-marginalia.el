@@ -1,17 +1,22 @@
-;;; epkg-marginalia.el --- Show Epkg information in completion annotations  -*- lexical-binding: t -*-
+;;; epkg-marginalia.el --- Show Epkg information in completion annotations  -*- lexical-binding:t -*-
 
-;; Copyright (C) 2021-2022  Jonas Bernoulli
+;; Copyright (C) 2021-2022 Jonas Bernoulli
 
 ;; Author: Jonas Bernoulli <jonas@bernoul.li>
 ;; Homepage: https://github.com/emacscollective/epkg-marginalia
 ;; Keywords: tools
 
-;; Package-Requires: ((emacs "26") (compat "28.1.1.0") (epkg "3.3.1") (marginalia "0.12"))
+;; Package-Requires: (
+;;      (emacs "26")
+;;      (compat "28.1.1.0")
+;;      (epkg "3.3.1")
+;;      (marginalia "0.12"))
+
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
-;; This file is free software; you can redistribute it and/or modify
+;; This file is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published
-;; by the Free Software Foundation; either version 3 of the License,
+;; by the Free Software Foundation, either version 3 of the License,
 ;; or (at your option) any later version.
 ;;
 ;; This file is distributed in the hope that it will be useful,
