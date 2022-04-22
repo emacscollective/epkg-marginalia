@@ -6,7 +6,7 @@
 ;; Homepage: https://github.com/emacscollective/epkg-marginalia
 ;; Keywords: tools
 
-;; Package-Requires: ((emacs "26") (epkg "3.3.1") (marginalia "0.12"))
+;; Package-Requires: ((emacs "26") (compat "28.1.1.0") (epkg "3.3.1") (marginalia "0.12"))
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
 ;; This file is free software; you can redistribute it and/or modify
@@ -36,8 +36,9 @@
 
 ;;; Code:
 
-(require 'marginalia)
+(require 'compat)
 
+(require 'marginalia)
 (require 'epkg)
 (require 'borg nil t)
 
