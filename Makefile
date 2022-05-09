@@ -10,7 +10,7 @@ DEPS += closql
 DEPS += compat
 DEPS += dash
 DEPS += emacsql
-DEPS += epkg
+DEPS += epkg/lisp
 DEPS += marginalia
 
 EMACS      ?= emacs
