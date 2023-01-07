@@ -1,6 +1,6 @@
 ;;; epkg-marginalia.el --- Show Epkg information in completion annotations  -*- lexical-binding:t -*-
 
-;; Copyright (C) 2021-2022 Jonas Bernoulli
+;; Copyright (C) 2021-2023 Jonas Bernoulli
 
 ;; Author: Jonas Bernoulli <jonas@bernoul.li>
 ;; Homepage: https://github.com/emacscollective/epkg-marginalia
