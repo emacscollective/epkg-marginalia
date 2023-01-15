@@ -11,6 +11,7 @@ DEPS += compat
 DEPS += dash
 DEPS += emacsql
 DEPS += epkg/lisp
+DEPS += llama
 DEPS += marginalia
 
 EMACS      ?= emacs

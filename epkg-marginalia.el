@@ -10,6 +10,7 @@
 ;;     (emacs "27.1")
 ;;     (compat "28.1.1.0")
 ;;     (epkg "3.3.1")
+;;     (llama "0.2.0")
 ;;     (marginalia "0.12"))
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
