@@ -11,3 +11,8 @@ provided by that as well.
     (cl-pushnew 'epkg-marginalia-annotate-package
 		(alist-get 'package marginalia-annotator-registry)))
 #+end_src
+
+#+html: <br><br>
+#+html: <a href="https://github.com/emacscollective/epkg-marginalia/actions/workflows/compile.yml"><img alt="Compile" src="https://github.com/emacscollective/epkg-marginalia/actions/workflows/compile.yml/badge.svg"/></a>
+#+html: <a href="https://stable.melpa.org/#/epkg-marginalia"><img alt="MELPA Stable" src="https://stable.melpa.org/packages/epkg-marginalia-badge.svg"/></a>
+#+html: <a href="https://melpa.org/#/epkg-marginalia"><img alt="MELPA" src="https://melpa.org/packages/epkg-marginalia-badge.svg"/></a>
