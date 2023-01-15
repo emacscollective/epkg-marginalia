@@ -93,7 +93,7 @@ Uses information provided by `borg', `epkg' and `package'."
         :width 11)
        ((or (and epkg (oref epkg summary))
             (and desc (package-desc-summary desc)))
-        :truncate marginalia-field-width
+        :truncate 1.0
         :face 'marginalia-documentation)))))
 
 ;;; _
