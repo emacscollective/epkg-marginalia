@@ -8,7 +8,7 @@
 
 ;; Package-Requires: (
 ;;     (emacs "27.1")
-;;     (compat "28.1.1.0")
+;;     (compat "29.1.3.4")
 ;;     (epkg "3.3.1")
 ;;     (llama "0.2.0")
 ;;     (marginalia "0.12"))
