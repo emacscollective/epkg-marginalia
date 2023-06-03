@@ -8,10 +8,10 @@
 
 ;; Package-Requires: (
 ;;     (emacs "27.1")
-;;     (compat "29.1.3.4")
-;;     (epkg "3.3.1")
-;;     (llama "0.2.0")
-;;     (marginalia "0.12"))
+;;     (compat "29.1.4.1")
+;;     (epkg "3.3.3")
+;;     (llama "0.3.0")
+;;     (marginalia "1.2"))
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
