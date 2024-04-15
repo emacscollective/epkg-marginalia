@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2021-2024 Jonas Bernoulli
 
-;; Author: Jonas Bernoulli <jonas@bernoul.li>
+;; Author: Jonas Bernoulli <emacs.epkg-marginalia@jonas.bernoulli.dev>
 ;; Homepage: https://github.com/emacscollective/epkg-marginalia
 ;; Keywords: tools
 
