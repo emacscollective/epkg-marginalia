@@ -75,7 +75,7 @@ Uses information provided by `borg', `epkg' and `package'."
     (when (or epkg desc)
       (marginalia--fields
        ((if desc (package-version-join (package-desc-version desc)) "")
-        :width 16
+        :truncate 16
         :face 'marginalia-version)
        ((cond
          ((and desc (eq (package-desc-dir desc) 'builtin))
@@ -94,7 +94,7 @@ Uses information provided by `borg', `epkg' and `package'."
           (propertize "mirror" 'face 'marginalia-archive))
          (desc
           (propertize (package-desc-archive desc) 'face 'marginalia-archive)))
-        :width 11)
+        :truncate 12)
        ((or (and epkg (oref epkg summary))
             (and desc (package-desc-summary desc)))
         :truncate 1.0
