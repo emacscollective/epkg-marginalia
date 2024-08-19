@@ -50,15 +50,21 @@
 (require 'borg nil t)
 
 (eval-when-compile (require 'package))
+(defvar package--builtins)
+(defvar package--initialized)
 (defvar package-alist)
 (defvar package-archive-contents)
-(defvar package--builtins)
 
 ;;;###autoload
 (defun epkg-marginalia-annotate-package (cand)
   "Annotate package CAND with its description summary.
 Uses information provided by `borg', `epkg' and `package'."
   (require 'package)
+  (unless package--initialized
+    (setq package-alist nil)
+    (package-load-all-descriptors)
+    (package-read-all-archive-contents)
+    (setq package--initialized t))
   (let* ((name (replace-regexp-in-string "-[[:digit:]\\.-]+\\'" "" cand))
          (epkg (epkg name))
          (symb (intern name))
