@@ -50,9 +50,6 @@
 (require 'borg nil t)
 
 (eval-when-compile (require 'package))
-(declare-function package--from-builtin "package")
-(declare-function package-version-join "package")
-(declare-function package-installed-p "package")
 (defvar package-alist)
 (defvar package-archive-contents)
 (defvar package--builtins)
