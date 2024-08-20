@@ -68,6 +68,7 @@ Uses information provided by `borg', `epkg' and `package'."
   (let* ((name (replace-regexp-in-string "-[[:digit:]\\.-]+\\'" "" cand))
          (epkg (epkg name))
          (symb (intern name))
+         ;; Upstream 459f230 seems like overkill, considering its cost.
          (desc (or (car (alist-get symb package-alist))
                    (if-let (built-in (assq symb package--builtins))
                        (package--from-builtin built-in)
