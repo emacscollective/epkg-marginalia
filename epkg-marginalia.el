@@ -54,6 +54,19 @@
 (defvar package-alist)
 (defvar package-archive-contents)
 
+(defgroup epkg-marginalia nil
+  "Show Epkg information in completion annotations."
+  :group 'epkg
+  :group 'marginalia)
+
+(defcustom epkg-marginalia-show-version nil
+  "Whether to show version information.
+This information comes from Package alone, so if you use Borg,
+it may not be accurate.."
+  :package-version '(epkg-marginalia . "0.1.0")
+  :group 'transient
+  :type 'boolean)
+
 ;;;###autoload
 (defun epkg-marginalia-annotate-package (cand)
   "Annotate package CAND with its description summary.
@@ -74,8 +87,10 @@ Uses information provided by `borg', `epkg' and `package'."
                      (car (alist-get symb package-archive-contents))))))
     (when (or epkg desc)
       (marginalia--fields
-       ((if desc (package-version-join (package-desc-version desc)) "")
-        :truncate 16
+       ((if (and desc epkg-marginalia-show-version)
+            (package-version-join (package-desc-version desc))
+          "")
+        :truncate (if (and desc epkg-marginalia-show-version) 16 0)
         :face 'marginalia-version)
        ((cond
          ((and desc (eq (package-desc-dir desc) 'builtin))
