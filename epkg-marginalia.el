@@ -38,8 +38,8 @@
 ;; provided by that as well.
 
 ;;   (with-eval-after-load 'marginalia
-;;     (cl-pushnew 'epkg-marginalia-annotate-package
-;;                 (alist-get 'package marginalia-annotator-registry)))
+;;     (setcar (alist-get 'package marginalia-annotator-registry)
+;;             #'epkg-marginalia-annotate-package))
 
 ;;; Code:
 
