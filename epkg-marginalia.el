@@ -49,6 +49,10 @@
 (require 'borg nil t)
 
 (eval-when-compile (require 'package))
+(declare-function package-load-all-descriptors "package" ())
+(declare-function package-read-all-archive-contents "package" ())
+(declare-function package--from-builtin built-in "package" (bi-desc))
+(declare-function package-version-join "package" (vlist))
 (defvar package--builtins)
 (defvar package--initialized)
 (defvar package-alist)
