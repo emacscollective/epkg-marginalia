@@ -9,9 +9,9 @@
 ;; Package-Version: 1.0.0
 ;; Package-Requires: (
 ;;     (emacs "27.1")
-;;     (compat "30.0.0.0")
-;;     (epkg "4.0.0")
-;;     (marginalia "1.7"))
+;;     (compat "30.0.2.0")
+;;     (epkg "4.0.4")
+;;     (marginalia "1.8"))
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
