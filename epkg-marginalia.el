@@ -53,6 +53,7 @@
 (declare-function package-read-all-archive-contents "package" ())
 (declare-function package--from-builtin built-in "package" (bi-desc))
 (declare-function package-version-join "package" (vlist))
+(declare-function package-installed-p "package" (package &optional min-version))
 (defvar package--builtins)
 (defvar package--initialized)
 (defvar package-alist)
