@@ -51,7 +51,7 @@
 (eval-when-compile (require 'package))
 (declare-function package-load-all-descriptors "package" ())
 (declare-function package-read-all-archive-contents "package" ())
-(declare-function package--from-builtin built-in "package" (bi-desc))
+(declare-function package--from-builtin "package" (bi-desc))
 (declare-function package-version-join "package" (vlist))
 (declare-function package-installed-p "package" (package &optional min-version))
 (defvar package--builtins)
