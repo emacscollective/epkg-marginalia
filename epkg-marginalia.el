@@ -98,22 +98,22 @@ Uses information provided by `borg', `epkg' and `package'."
         :truncate (if (and desc epkg-marginalia-show-version) 16 0)
         :face 'marginalia-version)
        ((cond
-         ((and desc (eq (package-desc-dir desc) 'builtin))
-          (propertize "builtin" 'face 'marginalia-installed))
-         ((and epkg
-               (fboundp 'borg-drones)
-               (member name (borg-drones)))
-          (propertize "assimilated" 'face 'marginalia-installed))
-         ((and epkg
-               (fboundp 'borg-clones)
-               (member name (borg-clones)))
-          (propertize "cloned" 'face 'marginalia-installed))
-         ((and desc (package-installed-p desc))
-          (propertize "installed" 'face 'marginalia-installed))
-         (epkg
-          (propertize "mirror" 'face 'marginalia-archive))
-         (desc
-          (propertize (package-desc-archive desc) 'face 'marginalia-archive)))
+          ((and desc (eq (package-desc-dir desc) 'builtin))
+           (propertize "builtin" 'face 'marginalia-installed))
+          ((and epkg
+                (fboundp 'borg-drones)
+                (member name (borg-drones)))
+           (propertize "assimilated" 'face 'marginalia-installed))
+          ((and epkg
+                (fboundp 'borg-clones)
+                (member name (borg-clones)))
+           (propertize "cloned" 'face 'marginalia-installed))
+          ((and desc (package-installed-p desc))
+           (propertize "installed" 'face 'marginalia-installed))
+          (epkg
+           (propertize "mirror" 'face 'marginalia-archive))
+          (desc
+           (propertize (package-desc-archive desc) 'face 'marginalia-archive)))
         :truncate 12)
        ((or (and epkg (oref epkg summary))
             (and desc (package-desc-summary desc)))
@@ -124,5 +124,6 @@ Uses information provided by `borg', `epkg' and `package'."
 (provide 'epkg-marginalia)
 ;; Local Variables:
 ;; indent-tabs-mode: nil
+;; lisp-indent-local-overrides: ((cond . 0) (interactive . 0))
 ;; End:
 ;;; epkg-marginalia.el ends here
