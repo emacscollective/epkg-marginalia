@@ -8,6 +8,7 @@ ELCS  = $(ELS:.el=.elc)
 DEPS  = borg
 DEPS += closql
 DEPS += compat
+DEPS += cond-let
 DEPS += emacsql
 DEPS += epkg/lisp
 DEPS += llama
