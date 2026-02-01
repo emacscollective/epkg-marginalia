@@ -49,11 +49,12 @@
 (require 'borg nil t)
 
 (eval-when-compile (require 'package))
-(declare-function package-load-all-descriptors "package" ())
+(declare-function package-load-all-descriptors "package-activate" ())
 (declare-function package-read-all-archive-contents "package" ())
 (declare-function package--from-builtin "package" (bi-desc))
-(declare-function package-version-join "package" (vlist))
-(declare-function package-installed-p "package" (package &optional min-version))
+(declare-function package-version-join "package-activate" (vlist))
+(declare-function package-installed-p "package-activate"
+                  (package &optional min-version))
 (defvar package--builtins)
 (defvar package--initialized)
 (defvar package-alist)
