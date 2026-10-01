@@ -6,13 +6,13 @@
 ;; Homepage: https://github.com/emacscollective/epkg-marginalia
 ;; Keywords: tools
 
-;; Package-Version: 1.1.5
+;; Package-Version: 1.1.6
 ;; Package-Requires: (
 ;;     (emacs     "28.1")
-;;     (compat    "31.0")
+;;     (compat    "31.1")
 ;;     (cond-let   "1.1")
 ;;     (epkg       "4.2")
-;;     (marginalia "2.11"))
+;;     (marginalia "2.13"))
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
